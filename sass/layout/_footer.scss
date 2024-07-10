@@ -1,0 +1,117 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+footer {
+  .footer-box {
+    max-width: 1400px;
+    height: 413px;
+    background-color: var.$red-color;
+    border: var.$text-color solid 1px;
+    border-radius: 20px;
+    position: relative;
+    top: 120px;
+    h3 {
+      @include mxn.family("Open Sans", 23px, 700, 30px, var.$text-color);
+      text-align: center;
+      padding: 64px 0 25px;
+    }
+    h1 {
+      @include mxn.family("Open Sans", 48px, 500, 64px, var.$text-color);
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      padding: 24px 0 64px;
+      @include mxn.family("Open Sans", 16px, 400, 28px, var.$text-color);
+    }
+    .fot-btn {
+      @include mxn.flex(center, center, 32px);
+
+      .input {
+        display: flex;
+        padding: 12px 404px 12px 19px;
+        border: rgba(245, 239, 219, 0.5) solid 1px;
+        border-radius: 100px;
+        @include mxn.family("Open Sans", 16px, 500, 28px, var.$text-color);
+        background-color: var.$red-color;
+        @media (max-width: 1070px) {
+          display: flex;
+          padding: 12px, 200px, 12px, 12px;
+          border-radius: 50px;
+        }
+      }
+      button {
+        display: flex;
+        padding: 12px 32px;
+        border: var.$text-color solid 1px;
+        border-radius: 100px;
+        background-color: var.$red-color;
+        @include mxn.family("Open Sans", 16px, 500, 28px, var.$text-color);
+        cursor: pointer;
+      }
+    }
+  }
+}
+.footer-end {
+  background-color: var.$red-color;
+  .footer-flex {
+    @include mxn.flex(0, space-evenly, 0);
+    padding: 292px 0 40px;
+    .footeer-about-one {
+      h2 {
+        @include mxn.family("Open Sans", 32px, 400, 42px, var.$text-color);
+        text-align: center;
+      }
+      h5 {
+        @include mxn.family("Open Sans", 16px, 400, 26px, var.$text-color);
+        padding: 24px 0 10px;
+      }
+      p {
+        @include mxn.family("Open Sans", 16px, 400, 26px, var.$text-color);
+        text-align: center;
+      }
+    }
+    .footeer-about-two {
+      img {
+        display: flex;
+        margin: 0 auto;
+        width: 336px;
+      }
+      .insta {
+        width: 104px;
+      }
+      p {
+        @include mxn.family("Open Sans", 16px, 400, 26px, var.$text-color);
+        max-width: 438px;
+        text-align: center;
+        padding: 32px 0 45px;
+      }
+      h6 {
+        @include mxn.family("Open Sans", 16px, 400, 26px, var.$text-color);
+        text-align: center;
+        padding-top: 80px;
+      }
+    }
+    .footeer-about-three {
+      h3 {
+        @include mxn.family("Open Sans", 32px, 400, 42px, var.$text-color);
+        text-align: center;
+      }
+      p {
+        @include mxn.family("Open Sans", 16px, 300, 26px, var.$text-color);
+        text-align: center;
+        max-width: 158px;
+        display: flex;
+        margin: 0 auto;
+        padding: 24px 0 12px;
+      }
+      h4 {
+        @include mxn.family("Open Sans", 16px, 300, 26px, var.$text-color);
+        text-align: center;
+        max-width: 154px;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}
