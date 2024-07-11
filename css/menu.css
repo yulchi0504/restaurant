@@ -1,0 +1,23 @@
+section .btn-new {
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 20px;
+}
+section .btn-new a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(36, 36, 36);
+  display: flex;
+  padding: 70px 0;
+}
+section .btn-new a:hover {
+  color: rgb(187, 35, 57);
+}
+section .tab-content .tab-pane {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+}

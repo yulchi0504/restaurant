@@ -86,53 +86,7 @@ aside {
     @include mxn.family("Open Sans", 48px, 500, 48px, var.$red-color);
     padding-top: 120px;
   }
-  .owl-carousel {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
 
-    .single-carusel {
-      background-color: var.$text-color;
-      height: 500px;
-      border-radius: 15px;
-
-      a {
-        img {
-          max-width: 300px;
-          display: flex;
-          margin: 0 auto;
-          padding: 50px 0;
-        }
-      }
-      p {
-        @include mxn.family("Open Sans", 25px, 400, 25px, var.$color-black);
-        text-align: center;
-        padding: 20px 10px;
-      }
-      .star-img {
-        display: flex;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      h2 {
-        @include mxn.family("Open Sans", 24px, 700, 32px, var.$red-color);
-        text-align: center;
-        padding-top: 10px;
-      }
-    }
-    .single-carusel:hover {
-      background-color: var.$red-color;
-
-      transition: 1s;
-    }
-    .single-carusel:hover p {
-      color: white;
-    }
-    .single-carusel:hover h2 {
-      color: wheat;
-    }
-  }
   .btn-logotip {
     display: flex;
     justify-content: end;
@@ -141,237 +95,82 @@ aside {
       top: 40px;
     }
   }
-}
-.owl-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  right: 0;
-  margin: auto;
-}
-.owl-nav .owl-prev {
-  position: absolute;
-  left: -40px;
-  top: 0;
-  transform: translateY(-50%);
-}
-.owl-nav .owl-next {
-  position: absolute;
-  right: -40px;
-  top: 0;
-  transform: translateY(-50%);
-}
-.owl-prev {
-  float: left;
-  font-size: 48px;
-  line-height: 48px;
-}
-.owl-next {
-  float: right;
-  font-size: 48px;
-  line-height: 48px;
-}
-.owl-prev:hover,
-.owl-next:hover {
-  color: #0a93d4;
-}
-.aside-end {
-  h1 {
-    @include mxn.family("Open Sans", 48px, 500, 48px, var.$red-color);
-    padding: 120px 0 60px;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    white-space: wrap;
-  }
-  .nav-pills .show.nav-link {
-    color: black;
-  }
-  .nav-pills .nav-link.active,
-  .nav-pills .show.nav-link {
-    color: var.$text-color;
-    background-color: var.$red-color;
-  }
-  .nav-pills .nav-link {
-    border-radius: 100px;
-    border: var.$red-color solid 1px;
-  }
-  .nav-link {
-    display: block;
-    @include mxn.family("Open Sans", 16px, 600, 28px, var.$color-black);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out;
-  }
-  .nav-link:hover {
-    color: black;
-  }
-  .tab-content {
-    .tab-pane {
-      display: grid;
-      grid-template-columns: repeat(4, 4fr);
-      .card {
-        width: 310px;
-        height: 366px;
-        border-radius: 14px;
-        margin-top: 20px;
-
-        img {
-          width: 270px;
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        .carusel-felx {
           display: flex;
-          margin: 0 auto;
+          justify-content: center;
+          .card {
+            max-width: 280px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 14px;
+
+            .card-body {
+              h5 {
+                @include mxn.family(
+                  "Open Sans",
+                  18px,
+                  400,
+                  25px,
+                  var.$color-black
+                );
+                text-align: center;
+              }
+              img {
+                display: flex;
+                margin: 0 auto;
+                padding: 20px 0;
+              }
+              .btn-sent {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 20px;
+                a {
+                  text-decoration: none;
+                  @include mxn.family(
+                    "Open Sans",
+                    24px,
+                    700,
+                    32px,
+                    var.$red-color
+                  );
+                }
+              }
+            }
+          }
+          .card:hover h5 {
+            color: white;
+          }
+          .card:hover .btn-sent a {
+            color: white;
+          }
         }
       }
-      .card-text {
-        @include mxn.family("Open Sans", 18px, 600, 24px, var.$color-black);
-        text-align: center;
-      }
-      .btn {
-        @include mxn.family("Open Sans", 24px, 600, 34px, var.$red-color);
-        display: flex;
-        padding: 30px 97px 0 97px;
+      .card:hover {
+        background-color: var.$red-color;
+        transition: 1s;
+        cursor: pointer;
       }
     }
-  }
-  .card:hover {
-    box-shadow: 10px 20px 50px 10px var.$red-color;
-    transition: 1s;
-    cursor: pointer;
-  }
-}
-.aside-next {
-  background-color: rgba(244, 244, 244, 1);
-  h5 {
-    @include mxn.family("Open Sans", 23px, 700, 30px, var.$color-black);
-    text-align: center;
-    padding: 100px 0 8px;
-  }
-  img {
-    display: flex;
-    margin: 0 auto;
-  }
-  h1 {
-    @include mxn.family("Open Sans", 48px, 400, 64px, var.$color-black);
-    text-align: center;
-    padding: 8px 0 60px;
-  }
-  .owl-carousel {
-    .item {
-      max-width: 410px;
-      height: 200px;
-      background-color: var.$text-color;
-      border-radius: 10px;
+    .carousel-control-prev {
       h1 {
-        @include mxn.family("Open Sans", 24px, 600, 26px, var.$color-black);
-        text-align: start;
-        padding: 30px 0 0 20px;
-      }
-      p {
-        @include mxn.family("Open Sans", 14px, 400, 22px, var.$color-black);
-        padding: 10px 50px 0 20px;
-      }
-      img {
-        max-width: 215px;
-        height: 16px;
-        display: flex;
-        margin-left: 0;
-        margin: 10px 0 0 20px;
+        position: relative;
+        bottom: 280px;
+        left: 1000px;
+        padding: 5px 10px;
+        border: var.$red-color solid 1px;
       }
     }
-  }
-  .logo-animation {
-    display: flex;
-    justify-content: end;
-    padding-top: 120px;
-    img {
-      display: flex;
-      margin-right: 0;
-    }
-  }
-}
-
-.news-bg {
-  h2 {
-    @include mxn.family("Open Sans", 23px, 400, 30px, var.$color-black);
-    text-align: center;
-    padding: 120px 0 8px;
-  }
-  img {
-    display: flex;
-    margin: 0 auto;
-  }
-  h1 {
-    @include mxn.family("Open Sans", 48px, 500, 63px, var.$red-color);
-    text-align: center;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns:
-      auto auto
-      auto;
-    .card {
-      width: 410px;
-      height: 584px;
-      border-radius: 14px;
-      margin-top: 30px;
-      img {
-        width: 100%;
-      }
-      h5 {
-        @include mxn.family("Open Sans", 24px, 500, 32px, var.$color-black);
-        text-transform: capitalize;
-
-        padding: 20px 0 10px 20px;
-      }
-      .card-text {
-        @include mxn.family("Open Sans", 14px, 500, 24px, var.$lorem-color);
-        padding: 0 29px 0 20px;
-      }
-      .btn-card {
-        @include mxn.flex(center, center, 180px);
-        a {
-          text-decoration: none;
-          @include mxn.family("Open Sans", 16px, 700, 16px, var.$red-color);
-        }
-        p {
-          @include mxn.family("Open Sans", 14px, 500, 24px, var.$lorem-color);
-        }
+    .carousel-control-next {
+      h1 {
+        position: relative;
+        bottom: 280px;
+        right: 20px;
+        padding: 5px 10px;
+        border: var.$red-color solid 1px;
       }
     }
-  }
-  .news-btn-link {
-    display: flex;
-    justify-content: center;
-    margin: 58px 0 128px;
-    button {
-      @include mxn.family("Open Sans", 16px, 700, 28px, var.$color-black);
-      display: flex;
-      padding: 8px 32px;
-      border: var.$red-color solid 1px;
-      background-color: var.$text-color;
-      border-radius: 100px;
-    }
-  }
-}
-.modal-bg {
-  background-image: url(../../img/modal.svg);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .modal-body {
-    width: 500px;
-    height: 350px;
-  }
-  .btn {
-    border-radius: 50%;
-    border: none;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 322px;
   }
 }

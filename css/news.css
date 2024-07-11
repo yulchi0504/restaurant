@@ -1,0 +1,126 @@
+section .btn-new {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 70px 0 5px;
+}
+section .btn-new a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(36, 36, 36);
+}
+section .btn-new a:hover {
+  color: rgb(187, 35, 57);
+}
+section h1 {
+  font-family: "Open Sans";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 83px;
+  color: rgb(36, 36, 36);
+  text-align: center;
+}
+@media (max-width: 600px) {
+  section h1 {
+    font-size: 40px;
+  }
+}
+section .logeshin {
+  display: flex;
+  margin: 0 auto;
+  padding: 5px 0 60px;
+}
+section .grid-about {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 40px;
+}
+@media (max-width: 1370px) {
+  section .grid-about {
+    display: ruby;
+  }
+}
+section .grid-about .card {
+  margin-top: 30px;
+  max-width: 410px;
+  height: 584px;
+  border-radius: 14px;
+  border: rgba(36, 36, 36, 0.1) solid 1px;
+}
+section .grid-about .card img {
+  width: 100%;
+}
+section .grid-about .card h5 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(36, 36, 36);
+  text-transform: capitalize;
+  padding: 20px 58px 10px 20px;
+}
+@media (max-width: 460px) {
+  section .grid-about .card h5 {
+    font-size: 18px;
+  }
+}
+section .grid-about .card p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(170, 170, 170);
+  padding: 0 29px 10px 20px;
+}
+@media (max-width: 460px) {
+  section .grid-about .card p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+section .grid-about .card .btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+}
+@media (max-width: 460px) {
+  section .grid-about .card .btn-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+  }
+}
+section .grid-about .card .btn-card a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: rgb(187, 35, 57);
+  text-decoration: none;
+}
+section .section-btn {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(36, 36, 36);
+  border: rgb(187, 35, 57) solid 1px;
+  display: flex;
+  margin: 0 auto;
+  padding: 8px 32px;
+  border-radius: 100px;
+  margin-top: 70px;
+  margin-bottom: 155px;
+  cursor: pointer;
+}
+section .section-btn:hover {
+  background-color: red;
+  color: wheat;
+  transition: 1s;
+}

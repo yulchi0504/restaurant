@@ -1,0 +1,176 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  .btn-new {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 70px 0 5px;
+    a {
+      text-decoration: none;
+      @include mxn.family("Open Sans", 14px, 400, 20px, var.$color-black);
+    }
+    a:hover {
+      color: var.$red-color;
+    }
+  }
+  h1 {
+    @include mxn.family("Open Sans", 64px, 500, 83px, var.$color-black);
+    text-align: center;
+    @media (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+  .logeshin {
+    display: flex;
+    margin: 0 auto;
+    padding: 5px 0 60px;
+  }
+  .about-contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 1200px) {
+      display: grid;
+    }
+    .about-contact-left {
+      @media (max-width: 1200px) {
+        padding-bottom: 20px;
+      }
+      .contact-box {
+        max-width: 420px;
+        height: 110px;
+        border: rgba(36, 36, 36, 0.1) solid 1px;
+        border-radius: 14px;
+        margin-top: 15px;
+        .img-btn-about {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          padding: 25px 0 25px 20px;
+          .img-flex-about {
+            width: 60px;
+            height: 60px;
+            background-color: var.$color-contact-btn;
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            border-radius: 50%;
+          }
+
+          .text-about-flex {
+            h1 {
+              @include mxn.family(
+                "Open Sans",
+                22px,
+                700,
+                34px,
+                var.$color-black
+              );
+              text-align: start;
+            }
+            p {
+              @include mxn.family(
+                "Open Sans",
+                14px,
+                400,
+                19px,
+                rgba(36, 36, 36, 1)
+              );
+            }
+          }
+        }
+      }
+    }
+    .about-contact-right {
+      max-width: 790px;
+
+      border: rgba(36, 36, 36, 0.1) solid 1px;
+      border-radius: 14px;
+      h1 {
+        @include mxn.family("Open Sans", 38px, 600, 34px, var.$color-black);
+        text-align: start;
+        padding: 40px 0 0 40px;
+      }
+      p {
+        @include mxn.family("Open Sans", 16px, 400, 24px, var.$color-black);
+        padding: 16px 185px 40px 40px;
+        @media (max-width: 820px) {
+          font-size: 12px;
+        }
+      }
+      .adres-about-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @media (max-width: 820px) {
+          grid-template-columns: repeat(1, 4fr);
+        }
+        .input {
+          @include mxn.family(
+            "Open Sans",
+            16px,
+            400,
+            21px,
+            rgba(51, 51, 51, 1)
+          );
+          display: flex;
+          padding: 15px 150px 14px 20px;
+          border-radius: 12px;
+          @media (max-width: 820px) {
+            padding: 15px 0 14px 20px;
+          }
+        }
+      }
+      .mes-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        .massage-input {
+          display: flex;
+          padding: 20px 542px 111px 20px;
+          @include mxn.family(
+            "Open Sans",
+            16px,
+            400,
+            21px,
+            rgba(51, 51, 51, 1)
+          );
+          border-radius: 12px;
+          @media (max-width: 820px) {
+            padding: 15px 350px 80px 20px;
+          }
+          @media (max-width: 820px) {
+            padding: 15px 150px 80px 20px;
+          }
+        }
+      }
+      .btn-about {
+        border: none;
+        @include mxn.family("Open Sans", 18px, 600, 25px, var.$text-color);
+        display: flex;
+        padding: 18px 45px;
+        background-color: var.$red-color;
+        border-radius: 39px;
+        margin: 25px 0 50px 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+aside {
+  h1 {
+    @include mxn.family("Open Sans", 38px, 500, 49px, var.$color-black);
+    text-align: center;
+    padding: 110px 0 40px;
+  }
+  .card-url {
+    .map {
+      width: 100%;
+    }
+  }
+}

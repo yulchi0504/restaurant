@@ -1,0 +1,23 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  .btn-new {
+    @include mxn.flex(center, 0, 20px);
+    a {
+      text-decoration: none;
+      @include mxn.family("Open Sans", 14px, 400, 20px, var.$color-black);
+      display: flex;
+      padding: 70px 0;
+    }
+    a:hover {
+      color: var.$red-color;
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      display: grid;
+      grid-template-columns: repeat(2, 5fr);
+    }
+  }
+}

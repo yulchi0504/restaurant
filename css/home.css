@@ -122,56 +122,6 @@ aside h1 {
   color: rgb(187, 35, 57);
   padding-top: 120px;
 }
-aside .owl-carousel {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 120px;
-}
-aside .owl-carousel .single-carusel {
-  background-color: rgb(255, 255, 255);
-  height: 500px;
-  border-radius: 15px;
-}
-aside .owl-carousel .single-carusel a img {
-  max-width: 300px;
-  display: flex;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-aside .owl-carousel .single-carusel p {
-  font-family: "Open Sans";
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 25px;
-  color: rgb(36, 36, 36);
-  text-align: center;
-  padding: 20px 10px;
-}
-aside .owl-carousel .single-carusel .star-img {
-  display: flex;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-aside .owl-carousel .single-carusel h2 {
-  font-family: "Open Sans";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  color: rgb(187, 35, 57);
-  text-align: center;
-  padding-top: 10px;
-}
-aside .owl-carousel .single-carusel:hover {
-  background-color: rgb(187, 35, 57);
-  transition: 1s;
-}
-aside .owl-carousel .single-carusel:hover p {
-  color: white;
-}
-aside .owl-carousel .single-carusel:hover h2 {
-  color: wheat;
-}
 aside .btn-logotip {
   display: flex;
   justify-content: end;
@@ -180,295 +130,64 @@ aside .btn-logotip img {
   position: relative;
   top: 40px;
 }
-
-.owl-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  right: 0;
-  margin: auto;
-}
-
-.owl-nav .owl-prev {
-  position: absolute;
-  left: -40px;
-  top: 0;
-  transform: translateY(-50%);
-}
-
-.owl-nav .owl-next {
-  position: absolute;
-  right: -40px;
-  top: 0;
-  transform: translateY(-50%);
-}
-
-.owl-prev {
-  float: left;
-  font-size: 48px;
-  line-height: 48px;
-}
-
-.owl-next {
-  float: right;
-  font-size: 48px;
-  line-height: 48px;
-}
-
-.owl-prev:hover,
-.owl-next:hover {
-  color: #0a93d4;
-}
-
-.aside-end h1 {
-  font-family: "Open Sans";
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 48px;
-  color: rgb(187, 35, 57);
-  padding: 120px 0 60px;
-}
-.aside-end .nav {
+aside .carousel .carousel-inner .carousel-item .carusel-felx {
   display: flex;
-  justify-content: space-between;
-  white-space: wrap;
+  justify-content: center;
 }
-.aside-end .nav-pills .show.nav-link {
-  color: black;
-}
-.aside-end .nav-pills .nav-link.active,
-.aside-end .nav-pills .show.nav-link {
-  color: rgb(255, 255, 255);
-  background-color: rgb(187, 35, 57);
-}
-.aside-end .nav-pills .nav-link {
-  border-radius: 100px;
-  border: rgb(187, 35, 57) solid 1px;
-}
-.aside-end .nav-link {
-  display: block;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 28px;
-  color: rgb(36, 36, 36);
-  text-decoration: none;
-  background: 0 0;
-  border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-.aside-end .nav-link:hover {
-  color: black;
-}
-.aside-end .tab-content .tab-pane {
-  display: grid;
-  grid-template-columns: repeat(4, 4fr);
-}
-.aside-end .tab-content .tab-pane .card {
-  width: 310px;
-  height: 366px;
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card {
+  max-width: 280px;
+  margin: 0 20px;
+  border: none;
   border-radius: 14px;
-  margin-top: 20px;
 }
-.aside-end .tab-content .tab-pane .card img {
-  width: 270px;
-  display: flex;
-  margin: 0 auto;
-}
-.aside-end .tab-content .tab-pane .card-text {
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card .card-body h5 {
   font-family: "Open Sans";
   font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
+  font-weight: 400;
+  line-height: 25px;
   color: rgb(36, 36, 36);
   text-align: center;
 }
-.aside-end .tab-content .tab-pane .btn {
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card .card-body img {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card .card-body .btn-sent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card .card-body .btn-sent a {
+  text-decoration: none;
   font-family: "Open Sans";
   font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
+  font-weight: 700;
+  line-height: 32px;
   color: rgb(187, 35, 57);
-  display: flex;
-  padding: 30px 97px 0 97px;
 }
-.aside-end .card:hover {
-  box-shadow: 10px 20px 50px 10px rgb(187, 35, 57);
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card:hover h5 {
+  color: white;
+}
+aside .carousel .carousel-inner .carousel-item .carusel-felx .card:hover .btn-sent a {
+  color: white;
+}
+aside .carousel .carousel-inner .card:hover {
+  background-color: rgb(187, 35, 57);
   transition: 1s;
   cursor: pointer;
 }
-
-.aside-next {
-  background-color: rgb(244, 244, 244);
-}
-.aside-next h5 {
-  font-family: "Open Sans";
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 30px;
-  color: rgb(36, 36, 36);
-  text-align: center;
-  padding: 100px 0 8px;
-}
-.aside-next img {
-  display: flex;
-  margin: 0 auto;
-}
-.aside-next h1 {
-  font-family: "Open Sans";
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 64px;
-  color: rgb(36, 36, 36);
-  text-align: center;
-  padding: 8px 0 60px;
-}
-.aside-next .owl-carousel .item {
-  max-width: 410px;
-  height: 200px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-}
-.aside-next .owl-carousel .item h1 {
-  font-family: "Open Sans";
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 26px;
-  color: rgb(36, 36, 36);
-  text-align: start;
-  padding: 30px 0 0 20px;
-}
-.aside-next .owl-carousel .item p {
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: rgb(36, 36, 36);
-  padding: 10px 50px 0 20px;
-}
-.aside-next .owl-carousel .item img {
-  max-width: 215px;
-  height: 16px;
-  display: flex;
-  margin-left: 0;
-  margin: 10px 0 0 20px;
-}
-.aside-next .logo-animation {
-  display: flex;
-  justify-content: end;
-  padding-top: 120px;
-}
-.aside-next .logo-animation img {
-  display: flex;
-  margin-right: 0;
-}
-
-.news-bg h2 {
-  font-family: "Open Sans";
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 30px;
-  color: rgb(36, 36, 36);
-  text-align: center;
-  padding: 120px 0 8px;
-}
-.news-bg img {
-  display: flex;
-  margin: 0 auto;
-}
-.news-bg h1 {
-  font-family: "Open Sans";
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 63px;
-  color: rgb(187, 35, 57);
-  text-align: center;
-}
-.news-bg .cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.news-bg .cards .card {
-  width: 410px;
-  height: 584px;
-  border-radius: 14px;
-  margin-top: 30px;
-}
-.news-bg .cards .card img {
-  width: 100%;
-}
-.news-bg .cards .card h5 {
-  font-family: "Open Sans";
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  color: rgb(36, 36, 36);
-  text-transform: capitalize;
-  padding: 20px 0 10px 20px;
-}
-.news-bg .cards .card .card-text {
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: rgb(170, 170, 170);
-  padding: 0 29px 0 20px;
-}
-.news-bg .cards .card .btn-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 180px;
-}
-.news-bg .cards .card .btn-card a {
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-  color: rgb(187, 35, 57);
-}
-.news-bg .cards .card .btn-card p {
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: rgb(170, 170, 170);
-}
-.news-bg .news-btn-link {
-  display: flex;
-  justify-content: center;
-  margin: 58px 0 128px;
-}
-.news-bg .news-btn-link button {
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 28px;
-  color: rgb(36, 36, 36);
-  display: flex;
-  padding: 8px 32px;
+aside .carousel .carousel-control-prev h1 {
+  position: relative;
+  bottom: 280px;
+  left: 1000px;
+  padding: 5px 10px;
   border: rgb(187, 35, 57) solid 1px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 100px;
 }
-
-.modal-bg {
-  background-image: url(../../img/modal.svg);
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.modal-bg .modal-body {
-  width: 500px;
-  height: 350px;
-}
-.modal-bg .btn {
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 322px;
+aside .carousel .carousel-control-next h1 {
+  position: relative;
+  bottom: 280px;
+  right: 20px;
+  padding: 5px 10px;
+  border: rgb(187, 35, 57) solid 1px;
 }

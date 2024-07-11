@@ -1,0 +1,91 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  .btn-new {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 70px 0 5px;
+    a {
+      text-decoration: none;
+      @include mxn.family("Open Sans", 14px, 400, 20px, var.$color-black);
+    }
+    a:hover {
+      color: var.$red-color;
+    }
+  }
+  h1 {
+    @include mxn.family("Open Sans", 64px, 500, 83px, var.$color-black);
+    text-align: center;
+    @media (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+  .logeshin {
+    display: flex;
+    margin: 0 auto;
+    padding: 5px 0 60px;
+  }
+  .grid-about {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 40px;
+    @media (max-width: 1370px) {
+      display: ruby;
+    }
+    .card {
+      margin-top: 30px;
+      max-width: 410px;
+      height: 584px;
+      border-radius: 14px;
+      border: rgba(36, 36, 36, 0.1) solid 1px;
+      img {
+        width: 100%;
+      }
+      h5 {
+        @include mxn.family("Open Sans", 24px, 500, 32px, var.$color-black);
+        text-transform: capitalize;
+        padding: 20px 58px 10px 20px;
+        @media (max-width: 460px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        @include mxn.family("Open Sans", 14px, 400, 24px, var.$lorem-color);
+        padding: 0 29px 10px 20px;
+        @media (max-width: 460px) {
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+      .btn-card {
+        @include mxn.flex(center, center, 165px);
+        @media (max-width: 460px) {
+          @include mxn.flex(center, center, 50px);
+          padding-top: 20px;
+        }
+        a {
+          @include mxn.family("Open Sans", 16px, 700, 16px, var.$red-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .section-btn {
+    @include mxn.family("Open Sans", 16px, 700, 28px, var.$color-black);
+    border: var.$red-color solid 1px;
+    display: flex;
+    margin: 0 auto;
+    padding: 8px 32px;
+    border-radius: 100px;
+    margin-top: 70px;
+    margin-bottom: 155px;
+    cursor: pointer;
+  }
+  .section-btn:hover {
+    background-color: red;
+    color: wheat;
+    transition: 1s;
+  }
+}
