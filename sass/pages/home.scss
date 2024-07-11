@@ -161,6 +161,7 @@ aside {
         left: 1000px;
         padding: 5px 10px;
         border: var.$red-color solid 1px;
+        border-radius: 10px;
       }
     }
     .carousel-control-next {
@@ -170,7 +171,209 @@ aside {
         right: 20px;
         padding: 5px 10px;
         border: var.$red-color solid 1px;
+        border-radius: 10px;
       }
     }
+  }
+}
+.tab-about-bg {
+  h1 {
+    @include mxn.family("Open Sans", 48px, 500, 48px, var.$red-color);
+    padding: 120px 0 60px;
+  }
+  .grid-about {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+  }
+  .card {
+    width: 310px;
+
+    border-radius: 14px;
+    .card-body {
+      h5 {
+        @include mxn.family("Open Sans", 18px, 400, 25px, var.$color-black);
+        text-align: center;
+      }
+      img {
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      a {
+        text-decoration: none;
+        @include mxn.family("Open Sans", 24px, 700, 32px, var.$red-color);
+        display: flex;
+        padding: 30px 0 40px 117px;
+      }
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .nav-item {
+    .nav-item-link {
+      @include mxn.family("Open Sans", 16px, 600, 28px, var.$color-black);
+      display: flex;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 100px;
+    }
+    .nav-item-link:active {
+      background-color: var.$red-color;
+
+      color: var.$text-color;
+    }
+  }
+}
+.custom {
+  h3 {
+    @include mxn.family("Open Sans", 23px, 700, 30px, var.$color-black);
+    text-align: center;
+    padding: 100px 0 8px;
+  }
+  img {
+    display: flex;
+    margin: 0 auto;
+  }
+  h1 {
+    @include mxn.family("Open Sans", 48px, 400, 62.5px, var.$color-black);
+    text-align: center;
+  }
+  .carousel {
+    margin-top: 30px;
+
+    .carousel-fl {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .card {
+        border-radius: 10px;
+        .card-body {
+          h5 {
+            @include mxn.family("Open Sans", 24px, 600, 26px, var.$color-black);
+            padding: 30px 0 10px 20px;
+          }
+          p {
+            @include mxn.family("Open Sans", 14px, 400, 22px, var.$color-black);
+            padding: 0 10px 10px 20px;
+          }
+          img {
+            display: flex;
+            margin-left: 0;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    .btn-logotip {
+      display: flex;
+      display: flex;
+      img {
+        display: flex;
+        margin-right: 0;
+      }
+    }
+    .left-img {
+      position: relative;
+      top: 160px;
+      right: 510px;
+    }
+    .right-img {
+      position: relative;
+      top: 160px;
+      left: 510px;
+    }
+  }
+}
+.aside-end {
+  h3 {
+    @include mxn.family("Open Sans", 23px, 700, 30px, var.$color-black);
+    text-align: center;
+    padding: 150px 0 8px;
+  }
+  img {
+    display: flex;
+    margin: 0 auto;
+  }
+  h1 {
+    @include mxn.family("Open Sans", 48px, 400, 62.5px, var.$red-color);
+    text-align: center;
+  }
+
+  .card {
+    margin-top: 30px;
+    max-width: 410px;
+    height: 584px;
+    border-radius: 14px;
+    border: rgba(36, 36, 36, 0.1) solid 1px;
+    img {
+      width: 100%;
+    }
+    h5 {
+      @include mxn.family("Open Sans", 24px, 500, 32px, var.$color-black);
+      text-transform: capitalize;
+      padding: 20px 58px 10px 20px;
+      @media (max-width: 460px) {
+        font-size: 18px;
+      }
+    }
+    p {
+      @include mxn.family("Open Sans", 14px, 400, 24px, var.$lorem-color);
+      padding: 0 29px 10px 20px;
+      @media (max-width: 460px) {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    .btn-card {
+      @include mxn.flex(center, center, 140px);
+      @media (max-width: 460px) {
+        @include mxn.flex(center, center, 50px);
+        padding-top: 20px;
+      }
+      a {
+        @include mxn.family("Open Sans", 16px, 700, 16px, var.$red-color);
+        text-decoration: none;
+        padding: 0 0 20px;
+      }
+    }
+  }
+  .btn-about {
+    display: flex;
+    justify-content: center;
+    button {
+      @include mxn.family("Open Sans", 16px, 600, 28px, var.$red-color);
+      display: flex;
+      margin: 0 auto;
+      padding: 8px 32px;
+      margin: 50px 0 120px;
+      border: none;
+      background-color: white;
+      border: var.$red-color solid 1px;
+      border-radius: 100px;
+    }
+    button:hover {
+      background-color: red;
+      color: var.$text-color;
+      transition: 1s;
+    }
+  }
+}
+.aside-modall {
+  background-image: url(../../img/md.svg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 350px;
+  }
+  .modal-dialog {
+    max-width: 585px;
   }
 }

@@ -1,0 +1,24 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  h1 {
+    @include mxn.family("Open Sans", 48px, 500, 48px, var.$color-black);
+    text-align: center;
+    padding: 120px 0 60px;
+  }
+  img {
+    display: flex;
+    margin: 0 auto;
+  }
+  p {
+    @include mxn.family("Open Sans", 20px, 500, 32px, var.$color-black);
+    max-width: 720px;
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 0 30px;
+  }
+  .about-item {
+    max-width: 720px;
+  }
+}
